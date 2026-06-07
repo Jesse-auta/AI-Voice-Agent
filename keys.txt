@@ -1,0 +1,11 @@
+# VAPI
+VAPI_API_KEY=5a74e2d1-267d-4429-bf2b-94ed11b8c613
+VAPI_WEBHOOK_SECRET=your_vapi_webhook_secret_here
+
+# Database
+DATABASE_URL=postgresql://postgres:+#ht7NP^a2HfMBy@db.fifchezdupvtoikfyygh.supabase.co:5432/postgres
+
+# App
+ENVIRONMENT=development
+LOG_LEVEL=INFO
+BASE_URL=https://your-ngrok-url-here.ngrok.io
