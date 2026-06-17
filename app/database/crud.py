@@ -58,14 +58,14 @@ async def get_all_messages(db: AsyncSession) -> list[Message]:
     result = await db.execute(
         select(Message).order_by(Message.created_at.desc())
     )
-    return result.scalars().all()
+    return list(result.scalars().all())
 
 
 async def get_all_calls(db: AsyncSession) -> list[Call]:
     result = await db.execute(
         select(Call).order_by(Call.started_at.desc())
     )
-    return result.scalars().all()
+    return list(result.scalars().all())
 
 
 async def mark_message_read(db: AsyncSession, message_id: str):
